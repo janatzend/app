@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+    <name>phundament</name>
+    <version>
+        <release>4.0.0</release>
+    </version>
+    <appdir>src</appdir>
+    <docroot>src/web</docroot>
+    <scriptsdir>scripts</scriptsdir>
+    <parameters>
+    <parameter display="DB_HOST" id="DB_HOST" readonly="false" required="true" type="string">
+      <defaultvalue>127.0.0.1</defaultvalue>
+    </parameter>
+    <parameter display="DB_PORT" id="DB_PORT" readonly="false" required="true" type="string">
+      <defaultvalue>3306</defaultvalue>
+    </parameter>
+    <parameter display="DB_NAME" id="DB_NAME" readonly="true" required="true" type="string">
+      <defaultvalue>phundament</defaultvalue>
+    </parameter>
+    <parameter display="DB_USER" id="DB_USER" readonly="false" required="true" type="string">
+      <defaultvalue>root</defaultvalue>
+    </parameter>
+    <parameter display="DB_PASS" id="DB_PASS" readonly="false" required="true" type="password">
+      </parameter>
+    <parameter display="APP_ENV" id="APP_ENV" readonly="false" required="true" type="choice">
+      <validation>
+        <enums>
+          <enum>dev</enum>
+          <enum>prod</enum>
+        </enums>
+      </validation>
+      <defaultvalue>dev</defaultvalue>
+      </parameter>
+    <parameter display="MODULE_NAME" id="MODULE_NAME" readonly="false" required="true" type="string"/>
+    <parameter display="MODULE_DB_HOST" id="MODULE_DB_HOST" readonly="false" required="true" type="string">
+      <defaultvalue>127.0.0.1</defaultvalue>
+    </parameter>
+    <parameter display="MODULE_DB_PORT" id="MODULE_DB_PORT" readonly="false" required="true" type="string">
+      <defaultvalue>3306</defaultvalue>
+    </parameter>
+    <parameter display="MODULE_DB_NAME" id="MODULE_DB_NAME" readonly="false" required="true" type="string"/>
+    <parameter display="MODULE_DB_USER" id="MODULE_DB_USER" readonly="false" required="true" type="string">
+      <defaultvalue>root</defaultvalue>
+    </parameter>
+    <parameter display="MODULE_DB_PASS" id="MODULE_DB_PASS" readonly="false" required="true" type="password"/>
+    <parameter display="MYSQL_CLIENT_PATH" id="MYSQL_CLIENT_PATH" readonly="false" required="false" type="string">
+      <defaultvalue>/usr/local/mysql/bin/mysql</defaultvalue>
+    </parameter>
+    <parameter display="APP_NAME" id="APP_NAME" readonly="false" required="false" type="string">
+      <defaultvalue>My i5 App</defaultvalue>
+    </parameter>
+    <parameter display="APP_TITLE" id="APP_TITLE" readonly="false" required="false" type="string">
+      <defaultvalue>My i5 apptitle</defaultvalue>
+    </parameter>
+  </parameters>
+    </package>
